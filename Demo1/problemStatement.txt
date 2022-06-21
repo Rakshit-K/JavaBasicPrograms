@@ -1,0 +1,15 @@
+Input Food Item, Quantity, Customer_Type
+Unit Price = 10
+Total Cost = Unit_price* Quantity
+
+if (Customer Type == "Regular") then
+	Total_Cost = Total_Cost - (Total_Cost* 5 / 100)
+	Display "You are a regular customer and eligible for 5% discount"
+
+else
+	Total_Cost = Total_Cost + 5
+	Display "You need to pay an additional delivery charge of $5"
+end-if
+
+Display "Order successfully placed for ", Food_Item
+Display "Total cost is: ", Total_Cost
